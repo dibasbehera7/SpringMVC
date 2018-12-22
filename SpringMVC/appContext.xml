@@ -9,7 +9,12 @@
        
       <bean id="fruit" class="com.dibas.Fruit" /> 
       
-      <bean id="vegetable" class="com.dibas.Vegetable" /> 
+      <bean name="vegetable" class="com.dibas.Vegetable" />
+      
+      
+      <bean name="vegWithName" class="com.dibas.Vegetable"> 
+         	<property name="myName" value="Brocolli"/>
+      </bean> 
       
        
 </beans>
