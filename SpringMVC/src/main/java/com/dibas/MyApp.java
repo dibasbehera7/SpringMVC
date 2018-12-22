@@ -33,8 +33,11 @@ public class MyApp {
 		System.out.println(fruitWithListAndMap.talkAboutYou());
 		
 		
-		
-		
+		/*
+		 * Setting Bean properties using  p-namespace
+		 */
+		Vegetable vegUsingPNamespace = (Vegetable) appContext.getBean("vegUsingPNamespace");
+			System.out.println(vegUsingPNamespace.talkAboutYou());
 		
 		
 		((FileSystemXmlApplicationContext)appContext).close();
