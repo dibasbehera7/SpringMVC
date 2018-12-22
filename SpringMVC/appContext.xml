@@ -16,5 +16,25 @@
          	<property name="myName" value="Brocolli"/>
       </bean> 
       
+      
+      <bean name="fruitWithListAndMap" class="com.dibas.Fruit">
+      
+      	<property name="fruitNameList">
+      		<list>
+      			<value>Apple</value>
+      			<value>Banana</value>
+      			<value>Orange</value>
+      		</list>
+      	</property>      
+      	<property name="fruitNameMap">
+      	<map>
+      		<entry key="Apple" value="red"/>
+			<entry key="Banana" value="yellow"/>
+			<entry key="Orange" value="orange"/>
+      	</map>
+      	</property>      
+      	
+      </bean>
+      
        
 </beans>

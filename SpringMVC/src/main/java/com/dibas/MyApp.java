@@ -26,6 +26,20 @@ public class MyApp {
 		Vegetable vegWithName = (Vegetable) appContext.getBean("vegWithName");
 		System.out.println(vegWithName.talkAboutYou());
 		
+		 /*
+		  * Setting Collection Type Bean Properties
+		  */
+		Fruit fruitWithListAndMap = (Fruit) appContext.getBean("fruitWithListAndMap");
+		System.out.println(fruitWithListAndMap.talkAboutYou());
+		
+		
+		
+		
+		
+		
+		((FileSystemXmlApplicationContext)appContext).close();
+			
 	}
 
+	
 }
