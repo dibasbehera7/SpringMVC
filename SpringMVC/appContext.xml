@@ -8,12 +8,18 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
        
+      <context:property-placeholder location="src/main/java/myApp.properties"/>
+      
       <bean id="fruit" class="com.dibas.Fruit" /> 
-      
       <bean name="vegetable" class="com.dibas.Vegetable" />
+     
+     <bean id="externalFruit" class="com.dibas.Fruit">
+    	<property name="definition" value="${def-fruit}"></property> 
+     </bean>
+     
+     
       
-      
-      <bean name="vegWithName" class="com.dibas.Vegetable"> 
+   <!--    <bean name="vegWithName" class="com.dibas.Vegetable"> 
          	<property name="myName" value="Brocolli"/>
       </bean> 
       
@@ -37,7 +43,7 @@
       	</map>
       	</property>      
       	
-      </bean>
+      </bean> -->
       
        
 </beans>
