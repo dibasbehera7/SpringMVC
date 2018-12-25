@@ -32,7 +32,7 @@ public class MyApp {
 		/*
 		 * Setting Collection Type Bean Properties
 		 */
-		// Fruit fruitWithListAndMap = (Fruit)
+		// Fruit fruitWithListAndMap = (Fruit)  
 		// appContext.getBean("fruitWithListAndMap");
 		// System.out.println(fruitWithListAndMap.talkAboutYou());
 		/*
